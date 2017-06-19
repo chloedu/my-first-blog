@@ -42,7 +42,7 @@ h1 {
     margin-bottom: 70px;
 }
 
-.post h2 a, .post h2 a:visited {
+.post h2, .post h2 a, .post h2 a:visited {
     color: #82C26D;
     font-size: 22pt;
 }
