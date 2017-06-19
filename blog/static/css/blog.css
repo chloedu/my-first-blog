@@ -1,12 +1,12 @@
 .page-header {
     background-color: #ABE697;
     margin-top: 0;
-    padding: 40px 20px 20px 40px;
+    padding: 40px 20px 20px 60px;
 }
 
 .page-header h1, .page-header h1 a, .page-header h1 a:visited, .page-header h1 a:active {
     color: #ffffff;
-    font-size: 40pt;
+    font-size: 50pt;
     text-decoration: none;
 }
 
@@ -14,8 +14,8 @@
     margin-left: 40px;
 }
 
-h1 {
-    font-family: 'Lobster', cursive;
+h1, h2 {
+    font-family: 'Cabin Sketch', cursive;
 }
 
 .date {
