@@ -4,6 +4,12 @@
     padding: 40px 20px 20px 60px;
 }
 
+.page-header p {
+    font-family: 'Open Sans Condensed', sans-serif;
+    color: #82C26D;
+    font-size: 26pt;
+}
+
 .page-header h1, .page-header h1 a, .page-header h1 a:visited, .page-header h1 a:active {
     font-family: 'Cabin Sketch', cursive;
     color: #ffffff;
