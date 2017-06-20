@@ -46,3 +46,8 @@ h1, h2 {
     color: #82C26D;
     font-size: 22pt;
 }
+
+.comment {
+    margin: 20px 0px 20px 20px;
+}
+
