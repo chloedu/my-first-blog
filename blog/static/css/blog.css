@@ -5,8 +5,9 @@
 }
 
 .page-header h1, .page-header h1 a, .page-header h1 a:visited, .page-header h1 a:active {
+    font-family: 'Cabin Sketch', cursive;
     color: #ffffff;
-    font-size: 50pt;
+    font-size: 60pt;
     text-decoration: none;
 }
 
@@ -14,8 +15,11 @@
     margin-left: 40px;
 }
 
-h1, h2 {
+
+h2 {
     font-family: 'Cabin Sketch', cursive;
+    color: #82C26D;
+    font-size: 22pt;    
 }
 
 .date {
@@ -42,6 +46,12 @@ h1, h2 {
     margin-bottom: 70px;
 }
 
+.post a {
+    color: #C2826E;
+    font-size: 10pt;
+}
+
+
 .post h2, .post h2 a, .post h2 a:visited {
     color: #82C26D;
     font-size: 22pt;
@@ -51,3 +61,6 @@ h1, h2 {
     margin: 20px 0px 20px 20px;
 }
 
+.glyphicon {
+    color: #82C26D;
+}
