@@ -71,3 +71,17 @@ h2 {
     font-size: 10pt;
 }
 
+.page-footer {
+    background-color: #ABE697;
+    margin-top: 0;
+    padding: 10px 10px 10px 40px;
+}
+
+.page-footer p {
+    font-family: 'Kalam', cursive;
+    color: #ffffff;
+    font-size: 12pt;
+    margin-left: 20pt;
+}
+
+
