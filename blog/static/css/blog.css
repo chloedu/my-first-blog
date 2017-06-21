@@ -64,11 +64,17 @@ h2 {
 }
 
 .post p {
-    text-align: justify
+    text-align: justify;
 }
 
 .comment {
     margin: 20px 0px 20px 20px;
+}
+
+.comment p {
+    text-align: justify;
+    font-size: 10pt;
+}
 }
 
 .glyphicon {
