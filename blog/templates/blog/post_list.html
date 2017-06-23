@@ -3,14 +3,11 @@
 {% block content %}
     {% for post in posts %}
         <div class="post">
-            <h2>{{ post.title }}</h2>
+            <h2><a href="{% url 'post_detail' pk=post.pk %}">{{ post.title }}</a></h2>
             <div class="date">
                 <p>published: {{ post.published_date }}</p>
             </div>
-            <div>
-            <p>{{ post.text|truncatewords:"10"|linebreaksbr }}</p>
-            <a href="{% url 'post_detail' pk=post.pk %}">Lire la suite</a>
-            </div>
+            <p>{{ post.text|truncatewords:"60"|linebreaksbr }}<a href="{% url 'post_detail' pk=post.pk %}"> Lire la suite</a></p>
             <a href="{% url 'post_detail' pk=post.pk %}">Commentaires : {{ post.approved_comments.count }}</a>
             <div>
             {% if user.is_authenticated %}

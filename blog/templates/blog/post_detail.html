@@ -16,9 +16,9 @@
             <a class="btn btn-default" href="{% url 'post_remove' pk=post.pk %}"><span class="glyphicon glyphicon-trash"></span></a>
         {% endif %}
         <p>{{ post.text|linebreaksbr }}</p>
-    </div>
-
     <hr>
+        <h3><strong>Commentaires</strong></h3>
+    </div>
     <a class="btn btn-default" href="{% url 'add_comment_to_post' pk=post.pk %}">Ajouter un commentaire</a>
     {% for comment in post.comments.all %}
         {% if user.is_authenticated or comment.approved_comment %}
@@ -34,8 +34,8 @@
             <p>{{ comment.text|linebreaks }}</p>
         </div>
         {% endif %}
-    {% empty %}
-        <p>Il n'y a pas encore de commentaires :(</p>
+        {% empty %}
+        <p><i>Il n'y a pas encore de commentaires</i> :(</p>
     {% endfor %}
 
 

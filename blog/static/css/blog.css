@@ -42,11 +42,20 @@ body{
     margin-left: 40px;
 }
 
-
 h2 {
     font-family: 'Cabin Sketch', cursive;
     color: #82C26D;
     font-size: 22pt;    
+}
+
+.post h2, .post h2 a, .post h2 a:visited {
+    color: #82C26D;
+    font-size: 23pt;
+}
+
+.post h3 {
+    color: #82C26D;
+    font-size: 12pt;
 }
 
 .date {
@@ -63,7 +72,7 @@ h2 {
 }
 
 .post {
-    margin-bottom: 70px;
+    margin-bottom: 15px;
     width: 100%;
 }
 
@@ -72,19 +81,12 @@ h2 {
     font-size: 10pt;
 }
 
-
-.post h2, .post h2 a, .post h2 a:visited {
-    color: #82C26D;
-    font-size: 22pt;
-}
-
 .post p {
     text-align: justify;
-
 }
 
 .comment {
-    margin: 20px 0px 20px 20px;
+    margin: 20px 0px 20px 40px;
 }
 
 .comment p {
@@ -108,7 +110,7 @@ h2 {
 .page-footer p {
     font-family: 'Kalam', cursive;
     color: #ffffff;
-    font-size: 15pt;
+    font-size: 12pt;
     margin-bottom: 5px;
 }
 
