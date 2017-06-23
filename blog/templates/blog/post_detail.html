@@ -16,9 +16,9 @@
             <a class="btn btn-default" href="{% url 'post_remove' pk=post.pk %}"><span class="glyphicon glyphicon-trash"></span></a>
         {% endif %}
         <p>{{ post.text|linebreaksbr }}</p>
-    <hr>
-        <h3><strong>Commentaires</strong></h3>
     </div>
+    <hr>
+    <h3><strong>Commentaires</strong></h3>
     <a class="btn btn-default" href="{% url 'add_comment_to_post' pk=post.pk %}">Ajouter un commentaire</a>
     {% for comment in post.comments.all %}
         {% if user.is_authenticated or comment.approved_comment %}
