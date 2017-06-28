@@ -13,7 +13,7 @@ body{
     background-color: #ABE697;
     margin-top: 0;
     margin-bottom: 0;
-    padding: 5px 5px 5px 20px;
+    padding: 5px 5px 0px 70px;
 }
 
 .page-header h1, .page-header h1 a, .page-header h1 a:visited, .page-header h1 a:active {
@@ -33,13 +33,14 @@ body{
     float: right;
     font-size: 14pt;
     margin-right: 30px;
+    margin-top: 0px;
 }
 
 .content {
     flex-grow: 1;
     overflow: auto;
     min-height: 2em;
-    margin-left: 130px;
+    margin-top: 0px;
 }
 
 h2 {

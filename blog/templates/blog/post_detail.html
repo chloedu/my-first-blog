@@ -15,15 +15,19 @@
             <a class="btn btn-default" href="{% url 'post_edit' pk=post.pk %}"><span class="glyphicon glyphicon-pencil"></span></a>
             <a class="btn btn-default" href="{% url 'post_remove' pk=post.pk %}"><span class="glyphicon glyphicon-trash"></span></a>
         {% endif %}
+        {% if post.illustration %}
+        <img src= "{{ post.illustration.url }}" class= "img-responsive">
+        {% endif %}
         <p>{{ post.text|linebreaksbr }}</p>
     </div>
     <hr>
     <h3><strong>Commentaires</strong></h3>
     <a class="btn btn-default" href="{% url 'add_comment_to_post' pk=post.pk %}">Ajouter un commentaire</a>
+
     {% for comment in post.comments.all %}
         {% if user.is_authenticated or comment.approved_comment %}
         <div class="comment">
-            <strong>{{ comment.author }}</strong>
+            <span class="glyphicon glyphicon-comment" aria-hidden="true"></span> <strong>{{ comment.author }}</strong>
             <div class="date">
                 {{ comment.created_date }}
                 {% if not comment.approved_comment %}

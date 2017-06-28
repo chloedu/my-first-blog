@@ -8,7 +8,7 @@
                 <p>published: {{ post.published_date }}</p>
             </div>
             <p>{{ post.text|truncatewords:"60"|linebreaksbr }}<a href="{% url 'post_detail' pk=post.pk %}"> Lire la suite</a></p>
-            <a href="{% url 'post_detail' pk=post.pk %}">Commentaires : {{ post.approved_comments.count }}</a>
+            <a href="{% url 'post_detail' pk=post.pk %}">{{ post.approved_comments.count }} commentaire{{ post.approved_comments.count|pluralize }}</a>
             <div>
             {% if user.is_authenticated %}
             <a href="{% url 'post_detail' pk=post.pk %}">Total : {{ post.comments.count }}</a>

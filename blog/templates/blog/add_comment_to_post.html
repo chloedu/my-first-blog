@@ -4,6 +4,8 @@
     <h2>Nouveau commentaire</h2>
     <form method="POST" class="post-form">{% csrf_token %}
         {{ form.as_p }}
-        <button type="submit" class="save btn btn-default">Envoyer</button>
+        <button type="submit" class="save btn btn-default">
+            <span class="glyphicon glyphicon-envelope" aria-hidden="true"></span> Envoyer
+        </button>
     </form>
 {% endblock %}
