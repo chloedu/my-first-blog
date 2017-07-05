@@ -1,11 +1,17 @@
 {% extends 'blog/base.html' %}
 
+{% block header %}
+<div class="blog-header">
+    <h2>Bienvenue!<br/>Vous êtes sur la page du blog.</h2>
+</div>
+{% endblock %}
+
 {% block content %}
     {% for post in posts %}
         <div class="post">
-            <h2><a href="{% url 'post_detail' pk=post.pk %}">{{ post.title }}</a></h2>
+            <h3><a href="{% url 'post_detail' pk=post.pk %}"># {{ post.title }}</a></h3>
             <div class="date">
-                <p>published: {{ post.published_date }}</p>
+                <p>publié le : {{ post.published_date }}</p>
             </div>
             <p>{{ post.text|truncatewords:"60"|linebreaksbr }}<a href="{% url 'post_detail' pk=post.pk %}"> Lire la suite</a></p>
             <a href="{% url 'post_detail' pk=post.pk %}">{{ post.approved_comments.count }} commentaire{{ post.approved_comments.count|pluralize }}</a>

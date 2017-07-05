@@ -1,7 +1,12 @@
 {% extends 'blog/base.html' %}
 
+{% block header %}
+<div class="autre-header">
+    <h4>Nouveau commentaire</h4>
+</div>
+{% endblock %}
+
 {% block content %}
-    <h2>Nouveau commentaire</h2>
     <form method="POST" class="post-form">{% csrf_token %}
         {{ form.as_p }}
         <button type="submit" class="save btn btn-default">
